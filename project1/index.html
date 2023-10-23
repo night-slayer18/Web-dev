@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>JavaScript Calendar</h1>
+        <p>Enter a year and month to generate a calendar:</p> 
+    </div>
+    <div class="cal">
+        <label for="yearInput">Year</label>
+        <input type="number" id="yearInput" placeholder="Enter year">
+        <label for="monthInput">Month</label>
+        <input type="number" id="monthInput" placeholder="Enter month (1-12)">
+        <button onclick="generateCalendar()">Generate</button>
+        <div class="calendar" id="calendar"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
