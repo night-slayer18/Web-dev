@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #754ef9;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+
+
+.forms {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input,textarea {
+    width: 75%;
+    padding: 1.7rem;
+    margin: 1.7rem;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    background: var(--white-color);
+    color: var(--text-color);
+    box-shadow: 0 0 5px var(--shadow-color);
+    transition: all .4s ease;
+}
+
+input:hover,textarea:hover {
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 5px var(--main-color);
+}
+
+.submit{
+    width: 50%;
+    padding: 1.5rem;
+    margin: 1.7rem;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: var(--white-color);
+    box-shadow: 0 0 5px var(--shadow-color);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+label {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    height: 200px;
+}
