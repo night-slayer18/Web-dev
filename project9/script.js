@@ -32,4 +32,4 @@ setInterval(() => {
     d = `${hour}:${minute}:${second}`
     document.getElementById('clock').innerHTML = d;
     document.getElementById('clock').classList.toggle('red');
-}, 1000);
+}, 500);
